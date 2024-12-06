@@ -60,8 +60,8 @@ function App() {
           <h2>Move Items</h2>
           <button onClick={addItem} className='btn' disabled={!selectedItem}>Add</button>
           <button onClick={removeItem} className='btn' disabled={!selectedItem}>Remove</button>
-          <button onClick={addAll} className='btn'>AddAll</button>
-          <button onClick={removeAll} className='btn'>RemoveAll</button>
+          <button onClick={addAll} className='btn' disabled={bucket1.length===0}>AddAll</button>
+          <button onClick={removeAll} className='btn' disabled={bucket2.length===0}>RemoveAll</button>
         </div>
 
         <div className='container2'>
