@@ -1,5 +1,9 @@
+[build]
+  base = "your-base-directory"
+  command = "npm run build"
+  publish = "build"  # output folder after build (adjust as needed)
 
 [[redirects]]
-from="/*"
-to="/index.html"
-status=200
+  from = "/main.jsx"
+  to = "/main.js"  # If you need to redirect requests to main.jsx
+  status = 200
